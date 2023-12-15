@@ -69,7 +69,7 @@ _**Testability:**_ Designing the architecture to facilitate `comprehensive testi
 
 ## Deriv P2P Architecture
 
-![Deriv P2P Architecture Overview](p2p_architecture.drawio.png)
+![Deriv P2P Architecture Overview](/resources/p2p_architecture.drawio.png)
 
 ### Architecture Components
 
@@ -97,7 +97,7 @@ This omission can result in difficulties when trying to change the way the appli
 
 ## Deriv GO Architecture
 
-![Deriv Go Architecture Overview](go_architecture.drawio.png)
+![Deriv Go Architecture Overview](/resources/go_architecture.drawio.png)
 
 ### Architecture Components
 
@@ -156,7 +156,7 @@ The `Dependency Inversion` encourages the decoupling of high-level modules from 
 
 ### Core
 
-![Core Architecture Overview](core.drawio.png)
+![Core Architecture Overview](/resources/core.drawio.png)
 
 Core part is primarily focused on defining contracts and interfaces that features _must_ implement. This is a form of _contract-driven design_, where you're establishing a set of rules and guidelines that each feature should follow. This approach can provide clear boundaries and consistency across application architecture.
 
@@ -188,7 +188,7 @@ For example, if a feature needs to interact with the data layer through the repo
 
 ### Feature
 
-![Feature Architecture Overview](architecture.drawio.png)
+![Feature Architecture Overview](/resources/architecture.drawio.png)
 
 The feature architecture follows a modular and structured approach, facilitating the development of individual components. By dividing each feature into distinct layers, including Data, Domain, Interactor, and Presentation, we establish clear boundaries and responsibilities.
 
@@ -202,7 +202,7 @@ Finally, the Presentation layer handles UI state management and interaction, enh
 
 ### Data Layer
 
-![Data Layer Architecture Overview](data_layer.drawio.png)
+![Data Layer Architecture Overview](/resources/data_layer.drawio.png)
 
 _**Feature Model:**_ This represents the data structure specific to the feature. It only contains the properties that are relevant to the feature.
 
@@ -214,7 +214,7 @@ _**Feature DataSource Abstraction and Implementations:**_ The feature-specific d
 
 ### Domain Layer
 
-![Domain Layer Architecture Overview](domain_layer.drawio.png)
+![Domain Layer Architecture Overview](/resources/domain_layer.drawio.png)
 
 _**Entity:**_ The entities within the domain layer represent core business objects that the feature deals with. These might mirror the structure of data retrieved from the data source.
 
@@ -222,7 +222,7 @@ _**Feature Repository Interface:**_ This defines the contract for interacting wi
 
 #### Interactor Layer
 
-![Interactor Layer Architecture Overview](interactor_layer.drawio.png)
+![Interactor Layer Architecture Overview](/resources/interactor_layer.drawio.png)
 
 _**Base Feature Service:**_ This abstract class defines the structure and methods for feature-specific services. It might include business logic, data processing, and interaction with repositories.
 
@@ -230,7 +230,7 @@ _**Service Implementation:**_ Each feature implements its own service class that
 
 #### Presentation Layer
 
-![Presentation Layer Architecture Overview](presentation_layer.drawio.png)
+![Presentation Layer Architecture Overview](/resources/presentation_layer.drawio.png)
 
 _**State Management:**_ This is where you implement the state management solution for the feature.
 
@@ -240,7 +240,7 @@ _**Page and Widgets:**_ This is where you implement the UI for the feature. It i
 
 ### Cross Feature Communication
 
-![Cross Feature Communication Architecture Overview](cross_feature_communication.drawio.png)
+![Cross Feature Communication Architecture Overview](/resources/cross_feature_communication.drawio.png)
 
 - **Using Services from Another Feature**
 
@@ -257,6 +257,4 @@ _**Page and Widgets:**_ This is where you implement the UI for the feature. It i
 
 ## Example
 
-Example of how to use this architecture can be found in the [example](example) folder.
-
-![Example Overview](diagram.svg)
+![Example Overview](/resources/diagram.svg)

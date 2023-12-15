@@ -6,9 +6,9 @@ This article is about structuring Deriv Flutter app using BLoC pattern and how w
 
 **B**usiness **Lo**gic **C**omponent (BLoC) is a state management design pattern recommended for Flutter. It helps in managing the app state and acts as a bridge between a data source and the widgets that need the data. It receives data/events as a stream, handles any required business logic, then publishes results data streams to the interested widgets. To implement this pattern, we are using **bloc** and **flutter_bloc** plugins.
 
-| ![BLoC](bloc_pattern.png) |
-| :-----------------------: |
-|      _BLoC pattern_       |
+| ![BLoC](/resources/bloc_pattern.png) |
+| :----------------------------------: |
+|            _BLoC pattern_            |
 
 ### The problem
 
@@ -34,13 +34,13 @@ The solution is to;
 
 The following diagrams show how the app is structured;
 
-| ![Proposed BLoC pattern structure](bloc_manager_structure_uml.png) |
-| :----------------------------------------------------------------: |
-|                 _Proposed BLoC pattern structure_                  |
+| ![Proposed BLoC pattern structure](/resources/bloc_manager_structure_uml.png) |
+| :---------------------------------------------------------------------------: |
+|                       _Proposed BLoC pattern structure_                       |
 
-| ![Proposed BLoC pattern implementation](bloc_manager_implementation_uml.png) |
-| :--------------------------------------------------------------------------: |
-|                    _Proposed BLoC pattern implementation_                    |
+| ![Proposed BLoC pattern implementation](/resources/bloc_manager_implementation_uml.png) |
+| :-------------------------------------------------------------------------------------: |
+|                         _Proposed BLoC pattern implementation_                          |
 
 ### Usage
 
@@ -266,7 +266,3 @@ class FeatureView extends StatelessWidget {
     );
 }
 ```
-
-### Example project
-
-To see a sample app of this implementation, please refer to this [link](https://github.com/hamed-fs/flutter_sample_bloc_manager).
